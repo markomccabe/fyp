@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Bed Management</title>
+  	<!-- Script references-->
+    <script type="text/javascript" src="script/jquery1.9.1.js"></script>
+    <script type="text/javascript" src="script/script.js"></script>
+	<script type="text/javascript" src="script/jquery-ui-1.10.2.custom.min.js"></script>
+	<!-- Stylesheet references-->
+	<link type="text/css" href="styles/cupertino/jquery-ui-1.10.2.custom.min.css" rel="stylesheet" />
+	<link type="text/css" href="styles/style.css" rel="stylesheet" />
+</head><!-- End of head -->
+<body>
+	<!-- Container for application divs-->
+	<div id="container">
+	
+		<!-- toolbar div to hold buttons-->
+		<div id="toolbar">			
+				<button id="inpatientBTN">Inpatients</button>
+				<button id="viewWardBTN">View wards</button>
+				<button id="addBTN">Add patient to ward</button>
+				<button id="moveBTN">Move patient</button>
+				<button id="download">Log pdf</button>
+				<button id="downloadExcel">Log excel</button>
+				<button id="wardHide">Hide Details</button>
+				<button id="wardShow">Show Details</button>			
+		</div><!-- end of toolbar div-->	
+		<!-- left div will hold inpatients-->	
+		<div id="left"> 
+		</div><!-- end of left div-->
+		<!-- display div will hold all outputed content such as wards and details-->
+		<div id ="display"> 
+			
+		</div><!-- end of display div-->
+		<!-- navigation div placed at the bottom to let users know where they are-->
+		<div id="nav">
+			<button id="overviewBTN">Overview</button>
+			<button id="wardBTN">Ward</button>
+			<button id="patientBTN">Patient</button>
+		</div><!--end of navigation div -->
+	</div>	<!-- end of container div-->
+</body><!-- end of body-->
+	<!-- dialog box with ok button-->
+	<div id="dialog1" title="Attention">
+	</div><!--end of dialog 1 -->
+	<!-- dialog box with confirm and cancel button-->
+	<div id="dialog2" title="Confirm Patient"> 
+	</div><!--end of dialog 2 -->
+</html>
